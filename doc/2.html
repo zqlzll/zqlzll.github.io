@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 10px;
+                background: #f1f1f1;
+            }
+            .header{
+                padding: 30px;
+                text-align: center;
+                background: white;
+            }
+            .header h1{
+                font-size: 50px;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+                background-color: #ddd;
+                color: black;
+            }
+            .leftcolumn{
+                float: left;
+                width: 75%;
+            }
+            .rightcolumn{
+                float: left;
+                width: 25%;
+                background-color: #f2f2f2;
+                padding-left: 20px;
+            }
+            .card{
+                background-color: white;
+                padding:20px;
+                margin-top: 20px;
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .footer {
+                padding:20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+            }
+            .tooltip .tooltiptext {
+                visibility:hidden;
+                width: 120px;
+                background-color: black;
+                color: #f2f2f2;
+                text-align: center;
+                border-radius: 6px;
+                padding:5px 0;
+
+                position:absolute;
+                z-index: 1;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <p>请把鼠标移到下面的文字上：</p>
+        <div class="tooltip">移到我上面
+            <span class="tooltiptext">工具提示文本</span>
+        </div>
+        <div class="header">
+            <h1>水滴博客test2</h1>
+            <p>欢迎到来！</p>
+        </div>
+        
+        <div class="topnav" >
+            
+            <div class="tooltip">
+                <a href="#" >首页</a>
+                <span class="tooltiptext">啊啊啊啊</span>
+            </div>
+            <div class="tooltip"> 
+                <a href="#">文章</a>
+                <span class="tooltiptext">heheh</span>
+            </div>
+           <div class="tooltip">
+            <a href="#">周刊</a>
+            <span class="tooltiptext">heheh</span>
+           </div>
+            <div class="tooltip">
+                <a href="#">关于</a>
+                <span class="tooltiptext">heheh</span>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>2级标题</h2>
+                    <h5>5级标题 2022.1.2 by zql</h5>
+                    <p> 人类生产，传播和分发信息的权利不应该被掌握在任何数据和互联网平台手中，这是属于数字人类的基本 
+                        游戏系挖掘法尔加分家房间安静安静啊</p>                                     
+                </div>
+                <div class="card">
+                    <h2>第二篇文章 无敌的</h2>
+                    <p>话说天下大事，分久必合，合久必分，且看那......</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <p>我是一个好人，好人好人，我喜欢吃，吃什么，我喜欢的动漫《来自新世界》</p>
+                </div>
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <p>竹白：12345.zhubai.love</p>
+                    <p>微信订阅；水滴</p>
+                </div>
+            </div>              
+            
+        </div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </body>
+</html>
+
